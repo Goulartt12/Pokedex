@@ -4,7 +4,7 @@ async function fetchData(){
         const name = document.getElementById("name");
         const id = document.getElementById("id");
         const type = document.getElementById("type");
-        const ability = document.getElementById("weight");
+        const weight = document.getElementById("weight");
         const pokemonName = document.getElementById("pokemonName").value.toLowerCase();
         const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${pokemonName}`);
 
