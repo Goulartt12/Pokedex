@@ -4,7 +4,7 @@ async function fetchData(){
         const name = document.getElementById("name");
         const id = document.getElementById("id");
         const type = document.getElementById("type");
-        const ability = document.getElementById("ability");
+        const ability = document.getElementById("weight");
         const pokemonName = document.getElementById("pokemonName").value.toLowerCase();
         const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${pokemonName}`);
 
@@ -24,7 +24,7 @@ async function fetchData(){
         name.textContent = `Name: ${data.name}`
         id.textContent = `Pokedex Id: ${data.id}`
         type.textContent = `Type: ${typ}`
-        ability.textContent = `Weight: ${(data.weight)/10}kg`
+        weight.textContent = `Weight: ${(data.weight)/10}kg`
 
     }
     catch(error){
